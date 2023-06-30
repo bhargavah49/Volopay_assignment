@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.tab-btns{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  position: relative;
+  
+}
+.tab-btns:before{
+  content:'';
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  position: absolute;
+  bottom:0;
+  z-index: 0;
+}
+
+.tab-btn{
+background-color: #fff;
+padding: 0.5rem 0;
+outline: none;
+border: none;
+}
+.tab-btn.active{
+  z-index: 9999;
+  border-bottom: 2px solid #a73a79;
+}
+
+
+
+.App{
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+}
